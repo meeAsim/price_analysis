@@ -1,0 +1,76 @@
+{% extends 'base/header.html' %} {% block title %}My Dashboard {% endblock %}
+{%block content %}
+
+    
+    <br>
+    <br>
+    <div class="row">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://assets-cdn.ekantipur.com/images/the-kathmandu-post/miscellaneous/Kalimati-22082018033950-1000x0.jpg" class="d-block w-100" style="height: fit-content;" alt="kalimati terkari">
+              </div>
+              <div class="carousel-item">
+                <img src="https://lh6.googleusercontent.com/-rAGPrIlYlj0/Tt_f-D8iGUI/AAAAAAAAAZM/fJ1zLIx5fPM/s1600/tarkari.jpg" class='d-block w-100' alt="kalimati terkari">
+              </div>
+              <div class="carousel-item">
+                <img src="http://assets-cdn.ekantipur.com/images/the-kathmandu-post/miscellaneous/Kalimati-22082018033950-1000x0.jpg" class="d-block w-100" style="height: fit-content;" alt="kalimati">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     
+    
+    <br><br><br>
+    <div class="row">
+    <div class="col-md-12">
+        <div class="border p-3 shadow text-center">
+          <h3>Price Analysis of Vegitables in Nepal</h3>
+           
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row-reverse">
+              <li class="nav-item dropdown" style="background-color:#C6F3EE; padding: 0.5rem; border-radius: 13%; color: rgb(26, 25, 25); font-weight: 700;">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                
+                  Select Vegitable
+                </a>
+                <!-- <ul class="dropdown-menu">
+                  <form action="/kleve" method="Post">
+                    {% csrf_token %}
+                  <li>
+                    <input type="text" name="dist" hidden>
+                    <button class="btn" type="submit" name="dist" value="Kleve">Kleve</button>
+                  </li>
+                  
+                  </form>
+                  <li><hr class="dropdown-divider" /></li>
+                  <form action="/kleve" method="Post">
+                   {% csrf_token %}
+                   <li>
+                    <input type="text" name="dist"  hidden>
+                    <button class="btn" type="submit" name="dist" value="Wesel">Wesel</button>
+                  </li>
+                  </form>
+                </ul> -->
+              </li>
+            </ul>
+          
+        </div>
+      </div>
+      </div>
+  </div>
+  
+
+{% include 'base/footer.html' %}
+{% endblock %}
